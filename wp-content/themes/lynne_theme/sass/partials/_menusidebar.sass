@@ -1,0 +1,48 @@
+.site-header
+	position: absolute
+	left: 0
+	top: 0
+	height: 100%
+	z-index: 1003
+	-webkit-transition: all 0.5s
+	transition: all 0.5s
+	background: rgba(0, 0, 0, 0.2)
+	a
+		color: white
+
+.site-header,
+.secondary
+	padding: 35px 35px 0 45px
+
+.site-title
+	font-size: 60px
+	font-weight: 400
+
+.nav-menu
+	display: block
+	margin: 30px 0 0 0
+	li
+		list-style: none
+		position: relative
+		font-size: 33px
+		letter-spacing: 2px
+		a
+			opacity: 0.5
+		a:hover
+			opacity: 1
+
+//effect for testing
+.testing
+	position: absolute
+	right: 5px
+	bottom: 500px
+	font-size: 4em
+	color: #000
+
+.slide-in-effect.site-header
+	-webkit-transform: translate3d(-90%, 0, 0)
+	transform: translate3d(-90%, 0, 0)
+
+.slide-in-effect.st-menu-open
+	-webkit-transform: translate3d(0, 0, 0)
+	transform: translate3d(0, 0, 0)
