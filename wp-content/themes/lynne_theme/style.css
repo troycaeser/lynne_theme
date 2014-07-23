@@ -132,7 +132,8 @@ a:hover {
   position: relative;
   overflow: hidden; }
   #slidesHolder figure img {
-    width: 100% !important; }
+    width: 100% !important;
+    min-width: 1480px !important; }
 #slidesHolder figure[style] {
   width: 100% !important;
   height: 100vh !important;
