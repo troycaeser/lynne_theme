@@ -129,11 +129,14 @@ a:hover {
 
 #slidesHolder figure {
   margin: 0 auto;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   #slidesHolder figure img {
     width: 100% !important; }
 #slidesHolder figure[style] {
-  width: 100% !important; }
+  width: 100% !important;
+  height: 100vh !important;
+  overflow: hidden !important; }
 #slidesHolder figcaption {
   position: absolute;
   bottom: 20%;
@@ -157,7 +160,6 @@ a:hover {
 .entry-title {
   font-size: 96px; }
   .entry-title a {
-    display: block;
     color: white; }
 
 .entry-meta {
