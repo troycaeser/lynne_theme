@@ -21,6 +21,10 @@ $(document).ready(function(){
 		$("#masthead").addClass("st-menu-open");
 		$("#slidesHolder").addClass("push");
 		$("#slidesHolder").css('transform-origin', 'center ' + 50/numberOfSlides + '%' + ' 0px');
+		// //hover and darken background
+		// $(slides).hover(function(){
+		// 	$('.site-content')
+		// });
 	});
 	// $(document).on('click', function(event) {
 	// 	if (!$(event.target).closest('.testing').length) {

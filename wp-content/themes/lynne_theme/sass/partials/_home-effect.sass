@@ -1,16 +1,30 @@
 .push
 	.slide
-		-webkit-transition: transform 0.35s ease
+		-webkit-transition: all 0.35s ease
 		.entry-title a
-			-webkit-transition: all 0.35s ease
+			display: block
+			-webkit-transition: transform 0.35s ease-in-out
 
 .push
 	.slide:hover
-		-webkit-transform: scale(1.1, 1.1)
-		z-index: 1004
+		-webkit-transform: scale(1.2, 1.2) translateZ(1px)
+		-webkit-box-shadow: 0 25px 45px -6px black
 		.entry-title a
-			-webkit-transform: scale(1.7, 1.7) translateY(-5%)
+			-webkit-transform: scale(1.4, 1.4) translateY(-15%)
+		.wp-caption-text
+			-webkit-transform: translate3d(0,0,0)
 
+// .wp-caption-text
+// 	position: absolute
+// 	width: 100%
+// 	bottom: 0
+// 	height: 4em
+// 	text-align: center
+// 	background: #000
+// 	color: #fff
+// 	font-size: 3em
+// 	-webkit-transition: -webkit-transform 0.35s
+// 	-webkit-transform: translate3d(0,50%,0)
 
 //arrow navigation
 .arrow-nav
