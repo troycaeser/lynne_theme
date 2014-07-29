@@ -11,7 +11,6 @@
 		color: white
 
 .site-header,
-.secondary
 	padding: 35px 35px 0 45px
 
 .site-title
@@ -26,10 +25,14 @@
 		position: relative
 		font-size: 33px
 		letter-spacing: 2px
+		line-height: 60px
 		a
+			display: block
 			opacity: 0.5
+			-webkit-transition: opacity 0.35s, transform 0.35s ease
 		a:hover
 			opacity: 1
+			-webkit-transform: translateX(30px)
 
 //effect for testing
 .testing

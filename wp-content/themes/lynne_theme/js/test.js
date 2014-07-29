@@ -114,11 +114,11 @@ $(document).ready(function(){
 		}
 	});
 
-	$.firefly({
-		color: '#fb9553',
-		minPixel: 3,
-		maxPixel: 6,
-		total : 10,
-		on: '.site-content'
-	});
+	// $.firefly({
+	// 	color: '#fb9553',
+	// 	minPixel: 3,
+	// 	maxPixel: 6,
+	// 	total : 10,
+	// 	on: '.site-content'
+	// });
 });
