@@ -195,13 +195,13 @@ a:hover {
   overflow: initial;
   position: relative;
   height: initial; }
-  .single-post .site-content article,
+  .single-post .site-content .post,
   .single-post .site-content .navigation,
   .single-post .site-content .comments-area {
     width: 1440px;
     margin: 0 auto;
     background: #1e1e1e; }
-  .single-post .site-content article .entry-header {
+  .single-post .site-content .post .entry-header {
     position: relative;
     display: block;
     margin: 0;
@@ -210,29 +210,73 @@ a:hover {
     width: 100%;
     height: auto;
     color: white; }
-  .single-post .site-content article .posted-on,
-  .single-post .site-content article .entry-content,
-  .single-post .site-content article .entry-meta {
+  .single-post .site-content .post .posted-on,
+  .single-post .site-content .post .entry-content,
+  .single-post .site-content .post .entry-meta {
     position: relative;
     background: none;
     display: block; }
-  .single-post .site-content article .author a {
+  .single-post .site-content .post .author a {
     color: white;
     text-decoration: underline; }
-  .single-post .site-content article .entry-content {
+  .single-post .site-content .post .entry-content {
     margin: 20px 0 0 0; }
-    .single-post .site-content article .entry-content figure {
+    .single-post .site-content .post .entry-content figure {
       width: initial !important; }
-    .single-post .site-content article .entry-content p {
+    .single-post .site-content .post .entry-content p {
       position: relative;
       display: block;
       width: 70%;
       color: white;
       margin: 0 auto;
-      font-size: 24px; }
+      font-size: 24px;
+      text-transform: none; }
   .single-post .site-content .wp-caption-text {
     visibility: none;
     display: none; }
+  .single-post .site-content .nav-links {
+    margin: 20px 0 20px 0; }
+  .single-post .site-content .nav-previous,
+  .single-post .site-content .nav-next {
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    font-size: 24px; }
+    .single-post .site-content .nav-previous a,
+    .single-post .site-content .nav-next a {
+      color: white; }
+
+.single-post .site-content .comments-title,
+.single-post .site-content .comment-list,
+.single-post .site-content .comment-respond {
+  margin: 0 20px 0 20px;
+  background: #444444; }
+.single-post .site-content .comments-title {
+  padding: 30px 0 15px 0;
+  text-align: center;
+  display: block;
+  color: white; }
+.single-post .site-content .comment-list {
+  list-style-position: inside; }
+  .single-post .site-content .comment-list li {
+    display: block; }
+.single-post .site-content .comment-meta {
+  padding-left: 10px; }
+.single-post .site-content .comment-metadata a {
+  color: white; }
+.single-post .site-content .comment-content {
+  margin: 30px;
+  padding-left: 35px;
+  font-size: 14px; }
+.single-post .site-content .reply {
+  padding: 0 0 10px 10px; }
+.single-post .site-content .comment-reply-title {
+  padding-left: 10px; }
+.single-post .site-content .comment-form {
+  padding-top: 35px;
+  width: 70%;
+  margin: 0 auto;
+  padding-bottom: 20px; }
 
 .push .slide {
   -webkit-transition: all 0.35s ease; }
@@ -369,9 +413,6 @@ hr {
   border: 0;
   height: 1px;
   margin-bottom: 1.5em; }
-
-ul, ol {
-  margin: 0 0 1.5em 3em; }
 
 ul {
   list-style: disc; }
@@ -527,15 +568,6 @@ textarea {
 .site-main .comment-navigation, .site-main .paging-navigation, .site-main .post-navigation {
   margin: 0 0 1.5em;
   overflow: hidden; }
-
-.comment-navigation .nav-previous, .paging-navigation .nav-previous, .post-navigation .nav-previous {
-  float: left;
-  width: 50%; }
-
-.comment-navigation .nav-next, .paging-navigation .nav-next, .post-navigation .nav-next {
-  float: right;
-  text-align: right;
-  width: 50%; }
 
 /*--------------------------------------------------------------
  *6.0 Accessibility
