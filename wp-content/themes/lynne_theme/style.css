@@ -22,17 +22,17 @@
 /*--------------------------------------------------------------
  *0.0 - Imports
  *-------------------------------------------------------------- */
-@import url("http://fonts.googleapis.com/css?family=Raleway:200");
+@import url("http://fonts.googleapis.com/css?family=Lato:900");
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: "Lato", sans-serif;
   text-transform: uppercase;
   font-size: 12px;
-  background: #ffa754; }
+  background: #e37601; }
 
 *,
 *::after,
@@ -137,7 +137,7 @@ a:hover {
   transform: translate3d(-90%, 0, 0); }
 
 .slide-in-effect.st-menu-open {
-  background: #24162d;
+  background: #86009f;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0); }
 
@@ -162,7 +162,7 @@ a:hover {
 
 .site-content {
   height: 100%;
-  background: #ffa754;
+  background: #e37601;
   position: relative;
   overflow: hidden; }
 
@@ -199,7 +199,7 @@ a:hover {
   line-height: 96px;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.5);
-  color: #2f1c3a;
+  color: #86009f;
   font-size: 36px;
   -webkit-transition: -webkit-transform 0.35s;
   transition: transform 0.35s;
@@ -220,7 +220,7 @@ a:hover {
 .entry-title {
   font-size: 96px; }
   .entry-title a {
-    color: #2f1c3a; }
+    color: #86009f; }
 
 .entry-meta {
   font-size: 24px; }
@@ -230,13 +230,11 @@ a:hover {
   color: white; }
 
 .posted-on {
-  background: black;
   display: block;
   margin: 0 auto;
   padding: 20px;
   width: 50%;
-  border-radius: 12px;
-  background: #7a3e48; }
+  border-radius: 12px; }
 
 .single-post .site-content {
   overflow: initial;
@@ -324,6 +322,13 @@ a:hover {
   width: 70%;
   margin: 0 auto;
   padding-bottom: 20px; }
+
+.form-allowed-tags {
+  display: none;
+  visibility: hidden; }
+
+.form-submit {
+  margin: 15px; }
 
 .push .slide {
   -webkit-transition: all 0.35s ease;
