@@ -4,9 +4,10 @@
 	top: 0
 	height: 100%
 	z-index: 1003
+	border-right: double 10px #fff
 	-webkit-transition: all 0.5s
 	transition: all 0.5s
-	background: rgba(0, 0, 0, 0.2)
+	background: rgba(255, 255, 255, 0.2)
 	a
 		color: white
 
@@ -35,17 +36,33 @@
 			-webkit-transform: translateX(30px)
 
 //effect for testing
-.testing
+.open_tab
 	position: absolute
-	right: 5px
-	bottom: 500px
-	font-size: 4em
+	text-align: center
+	line-height: 40px
+	font-size: 24px
+	border-radius: 50%
+	right: -20px
+	bottom: 50%
 	color: #000
+	background-color: #2f1c3a
+	width: 40px
+	height: 40px
+	z-index: 1004
+	-webkit-transition: transform 0.35s
+
+.open_tab:hover
+	-webkit-transform: translateX(5px)
+
+.rotate_arrow,
+.rotate_arrow:hover
+	-webkit-transform: rotate(180deg)
 
 .slide-in-effect.site-header
 	-webkit-transform: translate3d(-90%, 0, 0)
 	transform: translate3d(-90%, 0, 0)
 
 .slide-in-effect.st-menu-open
+	background: #24162d
 	-webkit-transform: translate3d(0, 0, 0)
 	transform: translate3d(0, 0, 0)

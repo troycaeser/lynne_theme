@@ -70,9 +70,10 @@ a:hover {
   top: 0;
   height: 100%;
   z-index: 1003;
+  border-right: double 10px white;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  background: rgba(0, 0, 0, 0.2); }
+  background: rgba(255, 255, 255, 0.2); }
   .site-header a {
     color: white; }
 
@@ -100,24 +101,40 @@ a:hover {
       opacity: 1;
       -webkit-transform: translateX(30px); }
 
-.testing {
+.open_tab {
   position: absolute;
-  right: 5px;
-  bottom: 500px;
-  font-size: 4em;
-  color: black; }
+  text-align: center;
+  line-height: 40px;
+  font-size: 24px;
+  border-radius: 50%;
+  right: -20px;
+  bottom: 50%;
+  color: black;
+  background-color: #2f1c3a;
+  width: 40px;
+  height: 40px;
+  z-index: 1004;
+  -webkit-transition: transform 0.35s; }
+
+.open_tab:hover {
+  -webkit-transform: translateX(5px); }
+
+.rotate_arrow,
+.rotate_arrow:hover {
+  -webkit-transform: rotate(180deg); }
 
 .slide-in-effect.site-header {
   -webkit-transform: translate3d(-90%, 0, 0);
   transform: translate3d(-90%, 0, 0); }
 
 .slide-in-effect.st-menu-open {
+  background: #24162d;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0); }
 
 .site-content {
   height: 100%;
-  background: -webkit-linear-gradient(left, #2f1c3a 0%, #aa433a 75%, #2f1c3a 100%);
+  background: #aa433a;
   position: relative;
   overflow: hidden; }
 
@@ -343,6 +360,10 @@ a:hover {
 .site-info {
   position: relative;
   text-align: center; }
+
+.home .site-footer {
+  visibility: none;
+  display: none; }
 
 .single-post .site-footer {
   position: relative; }

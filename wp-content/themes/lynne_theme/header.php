@@ -39,7 +39,7 @@
 				get_sidebar();
 			}
 		?><!-- #widgets -->
-		<a href="#" class="testing">|</a>
+		<a href="#" class="open_tab">&#10095;</a>
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

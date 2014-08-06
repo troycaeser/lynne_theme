@@ -17,7 +17,7 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
-		<h1>POSSIBLE HOME PAGE TEMPLATE</h1>
+		<!-- POSSIBLE HOME PAGE TEMPLATE -->
 			<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'lynne_theme' ) ); ?>
 			<?php
 				wp_link_pages( array(

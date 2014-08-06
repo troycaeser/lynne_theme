@@ -10,32 +10,20 @@ $(document).ready(function(){
 	var slideShowInterval;
 	var speed = 2000;
 	var slidesHolder = document.getElementById('slidesHolder');
-	// console.log(numberOfSlides + "slides on screen right now!" );
 
 	//check class function
 	function hasClass(element, cls) {
 		return (' ' + element.className + ' ').indexOf(' ' + cls + ' ') > -1;
 	}
 
-	$(".testing").click(function(){
-		$("#masthead").addClass("st-menu-open");
-		$("#slidesHolder").addClass("push");
+	$(".open_tab").click(function(){
+		// $("#masthead").addClass("st-menu-open");
+		// $("#slidesHolder").addClass("push");
+		$( "#masthead" ).toggleClass( "st-menu-open");
+		$( "#slidesHolder" ).toggleClass( "push");
+		$( ".open_tab").toggleClass( "rotate_arrow" );
 		$("#slidesHolder").css('transform-origin', 'center ' + 50/numberOfSlides + '%' + ' 0px');
-		// //hover and darken background
-		// $(slides).hover(function(){
-		// 	$('.site-content')
-		// });
 	});
-	// $(document).on('click', function(event) {
-	// 	if (!$(event.target).closest('.testing').length) {
-	// 		$("#masthead").removeClass("st-menu-open");
-	// 		$("#slidesHolder").removeClass("push");
-	// 		// $('#slidesHolder')
-	// 		//   .animate({'marginTop' : (slideHeight)*(-currentPosition)});
-	// 	}
-	// });
-
-	// slideShowInterval = setInterval(changePosition, speed);
 	
 	slides.wrapAll('<div id="slidesHolder"></div>');
 	
@@ -70,18 +58,6 @@ $(document).ready(function(){
 		var clsPush = document.getElementById('slidesHolder').className;
 		slideHeight = slides.height();
 
-		/* something went very wrong here, apparently just moving the .slide would work!!*/
-		// if(clsPush == "push"){
-		// 	slideHeight = slides.height()*0.5;
-		// 	smallSlideHeight = slides.height()*0.5;
-		// 	console.log(slideHeight);
-		// }
-		// else{
-		// 	slideHeight = slides.height();
-		// 	console.log(slideHeight);
-		// }
-			// $('#slidesHolder')
-			//   .animate({'marginTop' : (slideHeight)*(-currentPosition)});
 			$('.slide')
 			  .animate({top : (slideHeight)*(-currentPosition)});
 	}
