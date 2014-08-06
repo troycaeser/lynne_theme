@@ -55,7 +55,8 @@ a:hover {
   right: 0; }
 
 .push {
-  -webkit-transform: scale(0.5, 0.5); }
+  -webkit-transform: scale(0.5, 0.5);
+  transform: scale(0.5, 0.5); }
 
 .slide {
   position: relative;
@@ -102,10 +103,12 @@ a:hover {
     .nav-menu li a {
       display: block;
       opacity: 0.5;
-      -webkit-transition: opacity 0.35s, transform 0.35s ease; }
+      -webkit-transition: opacity 0.35s, transform 0.35s ease;
+      transition: opacity 0.35s, transform 0.35s ease; }
     .nav-menu li a:hover {
       opacity: 1;
-      -webkit-transform: translateX(30px); }
+      -webkit-transform: translateX(30px);
+      transform: translateX(30px); }
 
 .open_tab {
   position: absolute;
@@ -151,6 +154,8 @@ a:hover {
 .page .entry-content {
   text-transform: none;
   font-size: 20px; }
+  .page .entry-content p {
+    padding: 12px; }
 .page .comments-area {
   display: none;
   visibility: hidden; }
@@ -197,7 +202,9 @@ a:hover {
   color: #2f1c3a;
   font-size: 36px;
   -webkit-transition: -webkit-transform 0.35s;
-  -webkit-transform: translate3d(0, 100%, 0); }
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0); }
 
 .entry-header {
   position: absolute;
@@ -319,18 +326,25 @@ a:hover {
   padding-bottom: 20px; }
 
 .push .slide {
-  -webkit-transition: all 0.35s ease; }
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease; }
   .push .slide .entry-title a {
     display: block;
-    -webkit-transition: transform 0.35s ease-in-out; }
+    -webkit-transition: transform 0.35s ease-in-out;
+    transition: transform 0.35s ease-in-out; }
 
 .push .slide:hover {
+  z-index: 1004;
   -webkit-transform: scale(1.2, 1.2) translateZ(1px);
-  -webkit-box-shadow: 0 25px 45px -6px black; }
+  transform: scale(1.2, 1.2) translateZ(1px);
+  -webkit-box-shadow: 0 25px 45px -6px black;
+  box-shadow: 0 25px 45px -6px black; }
   .push .slide:hover .entry-title a {
-    -webkit-transform: scale(1.4, 1.4) translateY(-15%); }
+    -webkit-transform: scale(1.4, 1.4) translateY(-15%);
+    transform: scale(1.4, 1.4) translateY(-15%); }
   .push .slide:hover .wp-caption-text {
-    -webkit-transform: translate3d(0, 0, 0); }
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
 
 .arrow-nav {
   position: absolute;
@@ -345,7 +359,8 @@ a:hover {
     width: 50px;
     height: 50px;
     z-index: 1007;
-    -webkit-transition: color 0.35s ease; }
+    -webkit-transition: color 0.35s ease;
+    transition: color 0.35s ease; }
   .arrow-nav a::after {
     content: "";
     position: absolute;
@@ -358,12 +373,14 @@ a:hover {
     background: white;
     opacity: 0;
     -webkit-transition: opacity 0.35s ease, transform 0.35s ease;
+    transition: opacity 0.35s ease, transform 0.35s ease;
     z-index: -1; }
   .arrow-nav a:hover {
     color: #2f1c3a; }
   .arrow-nav a:hover::after {
     opacity: 1;
-    -webkit-transform: scale(1.3, 1.3); }
+    -webkit-transform: scale(1.3, 1.3);
+    transform: scale(1.3, 1.3); }
   .arrow-nav .prev {
     top: 0; }
   .arrow-nav .next {

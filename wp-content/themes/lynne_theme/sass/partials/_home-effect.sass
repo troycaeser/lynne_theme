@@ -1,18 +1,25 @@
 .push
 	.slide
 		-webkit-transition: all 0.35s ease
+		transition: all 0.35s ease
 		.entry-title a
 			display: block
 			-webkit-transition: transform 0.35s ease-in-out
+			transition: transform 0.35s ease-in-out
 
 .push
 	.slide:hover
+		z-index: 1004
 		-webkit-transform: scale(1.2, 1.2) translateZ(1px)
+		transform: scale(1.2, 1.2) translateZ(1px)
 		-webkit-box-shadow: 0 25px 45px -6px black
+		box-shadow: 0 25px 45px -6px black
 		.entry-title a
 			-webkit-transform: scale(1.4, 1.4) translateY(-15%)
+			transform: scale(1.4, 1.4) translateY(-15%)
 		.wp-caption-text
 			-webkit-transform: translate3d(0,0,0)
+			transform: translate3d(0,0,0)
 
 //arrow navigation
 .arrow-nav
@@ -29,6 +36,7 @@
 		height: 50px
 		z-index: 1007
 		-webkit-transition: color 0.35s ease
+		transition: color 0.35s ease
 	a::after
 		content: ''
 		position: absolute
@@ -41,12 +49,14 @@
 		background: white
 		opacity: 0
 		-webkit-transition: opacity 0.35s ease, transform 0.35s ease
+		transition: opacity 0.35s ease, transform 0.35s ease
 		z-index: -1
 	a:hover
 		color: #2f1c3a
 	a:hover::after
 		opacity: 1
 		-webkit-transform: scale(1.3, 1.3)
+		transform: scale(1.3, 1.3)
 	.prev
 		top: 0
 	.next
