@@ -22,7 +22,7 @@
 /*--------------------------------------------------------------
  *0.0 - Imports
  *-------------------------------------------------------------- */
-@import url("http://fonts.googleapis.com/css?family=Lato:900");
+@import url("http://fonts.googleapis.com/css?family=Lato:400,900");
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -137,7 +137,7 @@ a:hover {
   transform: translate3d(-90%, 0, 0); }
 
 .slide-in-effect.st-menu-open {
-  background: #86009f;
+  background: rgba(134, 0, 159, 0.8);
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0); }
 
