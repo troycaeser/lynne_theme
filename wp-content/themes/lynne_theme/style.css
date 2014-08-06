@@ -31,7 +31,8 @@
 body {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
-  font-size: 12px; }
+  font-size: 12px;
+  background: #aa433a; }
 
 *,
 *::after,
@@ -60,7 +61,8 @@ a:hover {
   position: relative;
   overflow: hidden; }
 
-.home .entry-content p {
+.home .entry-content p,
+#secondary {
   visibility: none;
   display: none; }
 
@@ -131,6 +133,23 @@ a:hover {
   background: #24162d;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0); }
+
+.page .site-content {
+  width: 80%;
+  margin: 0 auto; }
+
+.page .entry-header {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  left: initial;
+  top: initial; }
+.page .entry-content {
+  text-transform: none;
+  font-size: 20px; }
+.page .comments-area {
+  display: none;
+  visibility: hidden; }
 
 .site-content {
   height: 100%;
@@ -362,7 +381,7 @@ a:hover {
   text-align: center; }
 
 .home .site-footer {
-  visibility: none;
+  visibility: hidden;
   display: none; }
 
 .single-post .site-footer {
